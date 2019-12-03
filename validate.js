@@ -27,14 +27,14 @@ function validate()
     return false;
   }
   var email=document.StudReg.emailid.value;
-  atpos= email.indexof("@");
-  dotpos=email.lastindexof(".");
+  atpos= email.indexOf("@");
+  dotpos=email.lastIndexOf(".");
   if (email=="" || atpos<1 || (dotpos - atpos<2)) {
     alert("Please Enter Correct Email !");
     document.StudReg.emailid.focus();
     return false;
   }
-  if (document.StudReg.dob.value==" ") {
+  if (document.StudReg.dob.value=="") {
     alert("Please Provide Your DOB!!!");
     document.StudReg.dob.focus();
     return false;
