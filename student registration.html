@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Reg Form</title>
+    <script type="text/javascript" src="validate.js"></script>
+  </head>
+  <body>
+    <form action="" method="post" name="StudReg" onsubmit="return(validate());">
+      <table cellpadding="2" width="20%" cellspacing="2">
+        <tr>
+          <td colspan="2"><b>Student Registration Form</b></td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="studentname" id="studentname" size="30"></td>
+        </tr>
+        <tr>
+          <td>Peronal Address:</td>
+          <td><input type="text" name="personaladdress" id="personaladdress" size="50"></td>
+        </tr>
+       <tr>
+         <td>Gender:</td>
+         <td><input type="radio" name="g" value="male" size="10">Male</td>
+         <td><input type="radio" name="g" value="female" size="10">Female</td>
+       </tr>
+       <tr>
+         <td>City:</td>
+         <td><select name="city">
+            <option value="Kochi">Kochi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="New Delhi">New Delhi</option>
+          </select></td>
+       </tr>
+       <tr>
+         <td>Course:</td>
+         <td><select name="course">
+           <option value="-1" selected>Select...</option>
+           <option value="Btech">Btech</option>
+           <option value="MSc">MSc</option>
+           <option value="BSc">BSc</option>
+           <option value="BCA">BCA</option>
+         </select></td>
+       </tr>
+       <tr>
+         <td>E-Mail:</td>
+         <td><input type="text" name="emailid" id="emailid" size="30"></td>
+       </tr>
+       <tr>
+         <td>DOB:</td>
+         <td><input type="date" name="dob" id="dob" size="30"></td>
+       </tr>
+       <tr>
+         <td>PH no:</td>
+         <td><input type="text" name="phonenumber" id="phonenumber" size="30"></td>
+       </tr>
+       <tr>
+         <td><input type="reset"></td>
+         <td colspan="2"><input type="submit" name="" value="submitform"></td>
+       </tr>
+      </table>
+    </form>
+  </body>
+</html>
