@@ -27,9 +27,9 @@ function validate()
     return false;
   }
   var email=document.StudReg.emailid.value;
-  atpos= email.index("@");
-  dotpos=email.lastindex(".");
-  if (email==""||atpos<1||(dotpos-atpos<2)) {
+  atpos= email.indexof("@");
+  dotpos=email.lastindexof(".");
+  if (email=="" || atpos<1 || (dotpos - atpos<2)) {
     alert("Please Enter Correct Email !");
     document.StudReg.emailid.focus();
     return false;
